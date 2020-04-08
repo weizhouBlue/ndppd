@@ -1,0 +1,32 @@
+
+route-ttl 30000
+address-ttl 30000
+
+proxy dce-br {
+
+   router false
+   timeout 500   
+   autowire no
+   keepalive yes
+   retries 3
+   promiscuous no   
+   ttl 30000
+
+
+   rule fc02::222 {
+      static
+      autovia no
+   }
+
+   rule fc03::222 {
+      static
+      autovia no
+   }
+
+   rule fd00::222 {
+      static
+      autovia no
+   }
+
+
+}
