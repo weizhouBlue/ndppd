@@ -85,7 +85,7 @@
 ------------------------------------------------------------------------
 
    First, make sure you have g++ and make installed.
-
+(  yum -y install gcc-c++ make )
    It should be as easy as:
 
       make all && make install
